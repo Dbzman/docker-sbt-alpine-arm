@@ -17,8 +17,5 @@ script:
 # test image
 - docker run dbzman/sbt-arm:latest uname -a
 # push image
-- >
-  if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-    docker push dbzman/sbt-arm:latest
-  fi
+- docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+- docker push dbzman/sbt-arm:latest
