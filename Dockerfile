@@ -2,7 +2,7 @@ FROM hypriot/rpi-alpine
 
 MAINTAINER Timo Litzius <timo.litzius@aoe.com>
 
-ENV SBT_VERSION 0.13.15
+ENV SBT_VERSION 1.0.0
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 

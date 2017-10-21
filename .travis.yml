@@ -13,9 +13,9 @@ script:
   tar xzf qemu-arm-static.tar.gz &&
   popd
 # build image
-- docker build -t dbzman/sbt-arm:latest .
+- docker build -t dbzman/sbt-arm:1.0.0 .
 # test image
-- docker run dbzman/sbt-arm:latest uname -a
+- docker run dbzman/sbt-arm:1.0.0 uname -a
 # push image
 - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-- docker push dbzman/sbt-arm:latest
+- docker push dbzman/sbt-arm:1.0.0
